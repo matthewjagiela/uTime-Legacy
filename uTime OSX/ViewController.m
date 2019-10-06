@@ -370,7 +370,7 @@ NSInteger seconds;
     //[[NSRunLoop mainRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.5]];
     [_countdownToLabel setStringValue:countDownString];
     //countdownTime = [timeToCount objectAtIndex:currentIndex];
-   // [_countdownToLabel displayIfNeeded];
+    //[_countdownToLabel displayIfNeeded];
     //[_countdownToLabel displayIfNeeded];
     
     ////NSLog(@"Count to label \n Current Name: %@ \n Current Time: %@",[nameArray objectAtIndex:currentIndex],[timeToCount objectAtIndex:currentIndex]);
