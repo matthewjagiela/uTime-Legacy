@@ -1,0 +1,733 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E0FE6951D381859003EEF69 /* TimerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0FE6941D381859003EEF69 /* TimerTableViewController.m */; };
+		2E1892201DC988D30048F7A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E18921E1DC988D30048F7A4 /* main.m */; };
+		2E1892261DC98C780048F7A4 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E1892251DC98C780048F7A4 /* spark.png */; };
+		2E41E6B01DA315E30029DB3C /* ChangeTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E41E6AF1DA315E30029DB3C /* ChangeTimer.m */; };
+		2E8E08822347F3ED006560BB /* icon@64.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E8E087C2347F3EC006560BB /* icon@64.png */; };
+		2E8E08832347F3ED006560BB /* Retina@128.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E8E087D2347F3EC006560BB /* Retina@128.png */; };
+		2E8E08842347F3ED006560BB /* Retina@512.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E8E087E2347F3EC006560BB /* Retina@512.png */; };
+		2E8E08852347F3ED006560BB /* Retina@256.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E8E087F2347F3ED006560BB /* Retina@256.png */; };
+		2E8E08862347F3ED006560BB /* icon@32.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E8E08802347F3ED006560BB /* icon@32.png */; };
+		2E8E08872347F3ED006560BB /* main_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E8E08812347F3ED006560BB /* main_icon.png */; };
+		2EDD89AE1D55980000CFA971 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDD89AD1D55980000CFA971 /* InfoViewController.m */; };
+		2EEBB29E1DCA2AC2001D4BBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EEBB29D1DCA2AC2001D4BBA /* Main.storyboard */; };
+		2EFCCD691D37217A00E56276 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFCCD681D37217A00E56276 /* AppDelegate.m */; };
+		2EFCCD6F1D37217A00E56276 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFCCD6E1D37217A00E56276 /* ViewController.m */; };
+		2EFCCD711D37217A00E56276 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EFCCD701D37217A00E56276 /* Assets.xcassets */; };
+		2EFCCD7F1D37217A00E56276 /* uTime_OSXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFCCD7E1D37217A00E56276 /* uTime_OSXTests.m */; };
+		2EFCCD8A1D37217A00E56276 /* uTime_OSXUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFCCD891D37217A00E56276 /* uTime_OSXUITests.m */; };
+		3463A68321B64B4F00439C89 /* mac-32x32@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3463A67921B64B4E00439C89 /* mac-32x32@2x.png */; };
+		3463A68421B64B4F00439C89 /* mac-128x128.png in Resources */ = {isa = PBXBuildFile; fileRef = 3463A67A21B64B4E00439C89 /* mac-128x128.png */; };
+		3463A68521B64B4F00439C89 /* mac-128x128@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3463A67B21B64B4E00439C89 /* mac-128x128@2x.png */; };
+		3463A68621B64B4F00439C89 /* mac-256x256.png in Resources */ = {isa = PBXBuildFile; fileRef = 3463A67C21B64B4E00439C89 /* mac-256x256.png */; };
+		3463A68721B64B4F00439C89 /* mac-256x256@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3463A67D21B64B4E00439C89 /* mac-256x256@2x.png */; };
+		3463A68821B64B4F00439C89 /* mac-512x512.png in Resources */ = {isa = PBXBuildFile; fileRef = 3463A67E21B64B4E00439C89 /* mac-512x512.png */; };
+		3463A68921B64B4F00439C89 /* mac-512x512@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3463A67F21B64B4E00439C89 /* mac-512x512@2x.png */; };
+		3463A68A21B64B4F00439C89 /* mac-16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = 3463A68021B64B4E00439C89 /* mac-16x16.png */; };
+		3463A68B21B64B4F00439C89 /* mac-16x16@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3463A68121B64B4E00439C89 /* mac-16x16@2x.png */; };
+		3463A68C21B64B4F00439C89 /* mac-32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = 3463A68221B64B4F00439C89 /* mac-32x32.png */; };
+		3463A69021B64BFB00439C89 /* SnowParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3463A68F21B64BFB00439C89 /* SnowParticle.sks */; };
+		3463A69A21B64D5B00439C89 /* SnowScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3463A69921B64D5B00439C89 /* SnowScene.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		2E1892211DC98A230048F7A4 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = wrapper.scnassets;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# copySceneKitAssets\n";
+		};
+		2E1892241DC98A590048F7A4 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = folder.skatlas;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# TextureAtlas\n";
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXContainerItemProxy section */
+		2EFCCD7B1D37217A00E56276 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2EFCCD5C1D37217A00E56276 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2EFCCD631D37217A00E56276;
+			remoteInfo = "uTime OSX";
+		};
+		2EFCCD861D37217A00E56276 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2EFCCD5C1D37217A00E56276 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2EFCCD631D37217A00E56276;
+			remoteInfo = "uTime OSX";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2ECCC9A91D71ED4700927B8B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2E0FE6931D381859003EEF69 /* TimerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerTableViewController.h; sourceTree = "<group>"; };
+		2E0FE6941D381859003EEF69 /* TimerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerTableViewController.m; sourceTree = "<group>"; };
+		2E18921E1DC988D30048F7A4 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2E18921F1DC988D30048F7A4 /* uTime OSX-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "uTime OSX-Bridging-Header.h"; sourceTree = "<group>"; };
+		2E1892251DC98C780048F7A4 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spark.png; path = "../uTime Today/spark.png"; sourceTree = "<group>"; };
+		2E41E6AE1DA315E30029DB3C /* ChangeTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeTimer.h; sourceTree = "<group>"; };
+		2E41E6AF1DA315E30029DB3C /* ChangeTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeTimer.m; sourceTree = "<group>"; };
+		2E8E087C2347F3EC006560BB /* icon@64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@64.png"; sourceTree = "<group>"; };
+		2E8E087D2347F3EC006560BB /* Retina@128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Retina@128.png"; path = "../../../../../../Creative Cloud Files/uApps/uTime - All/uTime macOS 3/uTime 3 No Text-assets/macOS/Retina@128.png"; sourceTree = "<group>"; };
+		2E8E087E2347F3EC006560BB /* Retina@512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Retina@512.png"; sourceTree = "<group>"; };
+		2E8E087F2347F3ED006560BB /* Retina@256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Retina@256.png"; sourceTree = "<group>"; };
+		2E8E08802347F3ED006560BB /* icon@32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@32.png"; sourceTree = "<group>"; };
+		2E8E08812347F3ED006560BB /* main_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_icon.png; path = "../../../../../../Creative Cloud Files/uApps/uTime - All/uTime macOS 3/uTime 3 No Text-assets/macOS/main_icon.png"; sourceTree = "<group>"; };
+		2E9F8B9A1DA5784E00C1E5BD /* uTime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = uTime.entitlements; sourceTree = "<group>"; };
+		2ECCC9941D71ED4700927B8B /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		2EDD89AC1D55980000CFA971 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		2EDD89AD1D55980000CFA971 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		2EEBB29D1DCA2AC2001D4BBA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		2EFCCD641D37217A00E56276 /* uTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EFCCD671D37217A00E56276 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2EFCCD681D37217A00E56276 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2EFCCD6D1D37217A00E56276 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2EFCCD6E1D37217A00E56276 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2EFCCD701D37217A00E56276 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2EFCCD751D37217A00E56276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EFCCD7A1D37217A00E56276 /* uTime.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uTime.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EFCCD7E1D37217A00E56276 /* uTime_OSXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = uTime_OSXTests.m; sourceTree = "<group>"; };
+		2EFCCD801D37217A00E56276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EFCCD851D37217A00E56276 /* uTime.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uTime.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EFCCD891D37217A00E56276 /* uTime_OSXUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = uTime_OSXUITests.m; sourceTree = "<group>"; };
+		2EFCCD8B1D37217A00E56276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3463A67921B64B4E00439C89 /* mac-32x32@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mac-32x32@2x.png"; sourceTree = "<group>"; };
+		3463A67A21B64B4E00439C89 /* mac-128x128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mac-128x128.png"; sourceTree = "<group>"; };
+		3463A67B21B64B4E00439C89 /* mac-128x128@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mac-128x128@2x.png"; sourceTree = "<group>"; };
+		3463A67C21B64B4E00439C89 /* mac-256x256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mac-256x256.png"; sourceTree = "<group>"; };
+		3463A67D21B64B4E00439C89 /* mac-256x256@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mac-256x256@2x.png"; sourceTree = "<group>"; };
+		3463A67E21B64B4E00439C89 /* mac-512x512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mac-512x512.png"; sourceTree = "<group>"; };
+		3463A67F21B64B4E00439C89 /* mac-512x512@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mac-512x512@2x.png"; sourceTree = "<group>"; };
+		3463A68021B64B4E00439C89 /* mac-16x16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mac-16x16.png"; sourceTree = "<group>"; };
+		3463A68121B64B4E00439C89 /* mac-16x16@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mac-16x16@2x.png"; sourceTree = "<group>"; };
+		3463A68221B64B4F00439C89 /* mac-32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mac-32x32.png"; sourceTree = "<group>"; };
+		3463A68F21B64BFB00439C89 /* SnowParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SnowParticle.sks; sourceTree = "<group>"; };
+		3463A69821B64D5B00439C89 /* SnowScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SnowScene.h; sourceTree = "<group>"; };
+		3463A69921B64D5B00439C89 /* SnowScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnowScene.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2EFCCD611D37217A00E56276 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EFCCD771D37217A00E56276 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EFCCD821D37217A00E56276 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E95617A1DA5B19500F5A3B4 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				3435E4231F8B00AF001549FE /* uTime 3 */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
+		2ECCC9931D71ED4700927B8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2ECCC9941D71ED4700927B8B /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2EFCCD5B1D37217A00E56276 = {
+			isa = PBXGroup;
+			children = (
+				3463A69821B64D5B00439C89 /* SnowScene.h */,
+				3463A69921B64D5B00439C89 /* SnowScene.m */,
+				2E95617A1DA5B19500F5A3B4 /* Icons */,
+				2E9F8B9A1DA5784E00C1E5BD /* uTime.entitlements */,
+				2EDD89AC1D55980000CFA971 /* InfoViewController.h */,
+				2EDD89AD1D55980000CFA971 /* InfoViewController.m */,
+				2EFCCD661D37217A00E56276 /* uTime OSX */,
+				2EFCCD7D1D37217A00E56276 /* uTime OSXTests */,
+				2EFCCD881D37217A00E56276 /* uTime OSXUITests */,
+				2ECCC9931D71ED4700927B8B /* Frameworks */,
+				2EFCCD651D37217A00E56276 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2EFCCD651D37217A00E56276 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2EFCCD641D37217A00E56276 /* uTime.app */,
+				2EFCCD7A1D37217A00E56276 /* uTime.xctest */,
+				2EFCCD851D37217A00E56276 /* uTime.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2EFCCD661D37217A00E56276 /* uTime OSX */ = {
+			isa = PBXGroup;
+			children = (
+				2EEBB29D1DCA2AC2001D4BBA /* Main.storyboard */,
+				2E1892251DC98C780048F7A4 /* spark.png */,
+				2EFCCD671D37217A00E56276 /* AppDelegate.h */,
+				2EFCCD681D37217A00E56276 /* AppDelegate.m */,
+				2EFCCD6D1D37217A00E56276 /* ViewController.h */,
+				2EFCCD6E1D37217A00E56276 /* ViewController.m */,
+				2EFCCD701D37217A00E56276 /* Assets.xcassets */,
+				2EFCCD751D37217A00E56276 /* Info.plist */,
+				2EFCCD6A1D37217A00E56276 /* Supporting Files */,
+				2E0FE6931D381859003EEF69 /* TimerTableViewController.h */,
+				2E0FE6941D381859003EEF69 /* TimerTableViewController.m */,
+				2E41E6AE1DA315E30029DB3C /* ChangeTimer.h */,
+				2E41E6AF1DA315E30029DB3C /* ChangeTimer.m */,
+				3463A68F21B64BFB00439C89 /* SnowParticle.sks */,
+			);
+			path = "uTime OSX";
+			sourceTree = "<group>";
+		};
+		2EFCCD6A1D37217A00E56276 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2E18921E1DC988D30048F7A4 /* main.m */,
+				2E18921F1DC988D30048F7A4 /* uTime OSX-Bridging-Header.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2EFCCD7D1D37217A00E56276 /* uTime OSXTests */ = {
+			isa = PBXGroup;
+			children = (
+				2EFCCD7E1D37217A00E56276 /* uTime_OSXTests.m */,
+				2EFCCD801D37217A00E56276 /* Info.plist */,
+			);
+			path = "uTime OSXTests";
+			sourceTree = "<group>";
+		};
+		2EFCCD881D37217A00E56276 /* uTime OSXUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2EFCCD891D37217A00E56276 /* uTime_OSXUITests.m */,
+				2EFCCD8B1D37217A00E56276 /* Info.plist */,
+			);
+			path = "uTime OSXUITests";
+			sourceTree = "<group>";
+		};
+		3435E4231F8B00AF001549FE /* uTime 3 */ = {
+			isa = PBXGroup;
+			children = (
+				2E8E08802347F3ED006560BB /* icon@32.png */,
+				2E8E087C2347F3EC006560BB /* icon@64.png */,
+				2E8E08812347F3ED006560BB /* main_icon.png */,
+				2E8E087D2347F3EC006560BB /* Retina@128.png */,
+				2E8E087F2347F3ED006560BB /* Retina@256.png */,
+				2E8E087E2347F3EC006560BB /* Retina@512.png */,
+				3463A66C21B649F600439C89 /* Holiday Icons */,
+			);
+			name = "uTime 3";
+			sourceTree = "<group>";
+		};
+		3463A66C21B649F600439C89 /* Holiday Icons */ = {
+			isa = PBXGroup;
+			children = (
+				3463A68021B64B4E00439C89 /* mac-16x16.png */,
+				3463A68121B64B4E00439C89 /* mac-16x16@2x.png */,
+				3463A68221B64B4F00439C89 /* mac-32x32.png */,
+				3463A67921B64B4E00439C89 /* mac-32x32@2x.png */,
+				3463A67A21B64B4E00439C89 /* mac-128x128.png */,
+				3463A67B21B64B4E00439C89 /* mac-128x128@2x.png */,
+				3463A67C21B64B4E00439C89 /* mac-256x256.png */,
+				3463A67D21B64B4E00439C89 /* mac-256x256@2x.png */,
+				3463A67E21B64B4E00439C89 /* mac-512x512.png */,
+				3463A67F21B64B4E00439C89 /* mac-512x512@2x.png */,
+			);
+			name = "Holiday Icons";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2EFCCD631D37217A00E56276 /* uTime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EFCCD8E1D37217A00E56276 /* Build configuration list for PBXNativeTarget "uTime" */;
+			buildPhases = (
+				2EFCCD601D37217A00E56276 /* Sources */,
+				2EFCCD611D37217A00E56276 /* Frameworks */,
+				2EFCCD621D37217A00E56276 /* Resources */,
+				2ECCC9A91D71ED4700927B8B /* Embed App Extensions */,
+			);
+			buildRules = (
+				2E1892241DC98A590048F7A4 /* PBXBuildRule */,
+				2E1892211DC98A230048F7A4 /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = uTime;
+			productName = "uTime OSX";
+			productReference = 2EFCCD641D37217A00E56276 /* uTime.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2EFCCD791D37217A00E56276 /* uTimeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EFCCD911D37217A00E56276 /* Build configuration list for PBXNativeTarget "uTimeTests" */;
+			buildPhases = (
+				2EFCCD761D37217A00E56276 /* Sources */,
+				2EFCCD771D37217A00E56276 /* Frameworks */,
+				2EFCCD781D37217A00E56276 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2EFCCD7C1D37217A00E56276 /* PBXTargetDependency */,
+			);
+			name = uTimeTests;
+			productName = "uTime OSXTests";
+			productReference = 2EFCCD7A1D37217A00E56276 /* uTime.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2EFCCD841D37217A00E56276 /* uTimeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EFCCD941D37217A00E56276 /* Build configuration list for PBXNativeTarget "uTimeUITests" */;
+			buildPhases = (
+				2EFCCD811D37217A00E56276 /* Sources */,
+				2EFCCD821D37217A00E56276 /* Frameworks */,
+				2EFCCD831D37217A00E56276 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2EFCCD871D37217A00E56276 /* PBXTargetDependency */,
+			);
+			name = uTimeUITests;
+			productName = "uTime OSXUITests";
+			productReference = 2EFCCD851D37217A00E56276 /* uTime.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2EFCCD5C1D37217A00E56276 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Matthew Jagiela";
+				TargetAttributes = {
+					2EFCCD631D37217A00E56276 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = MCRTE5CC2K;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 1;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+					2EFCCD791D37217A00E56276 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 2EFCCD631D37217A00E56276;
+					};
+					2EFCCD841D37217A00E56276 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 2EFCCD631D37217A00E56276;
+					};
+				};
+			};
+			buildConfigurationList = 2EFCCD5F1D37217A00E56276 /* Build configuration list for PBXProject "uTime" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 2EFCCD5B1D37217A00E56276;
+			productRefGroup = 2EFCCD651D37217A00E56276 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2EFCCD631D37217A00E56276 /* uTime */,
+				2EFCCD791D37217A00E56276 /* uTimeTests */,
+				2EFCCD841D37217A00E56276 /* uTimeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2EFCCD621D37217A00E56276 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E1892261DC98C780048F7A4 /* spark.png in Resources */,
+				3463A69021B64BFB00439C89 /* SnowParticle.sks in Resources */,
+				3463A68521B64B4F00439C89 /* mac-128x128@2x.png in Resources */,
+				3463A68B21B64B4F00439C89 /* mac-16x16@2x.png in Resources */,
+				3463A68A21B64B4F00439C89 /* mac-16x16.png in Resources */,
+				2E8E08842347F3ED006560BB /* Retina@512.png in Resources */,
+				2E8E08862347F3ED006560BB /* icon@32.png in Resources */,
+				3463A68321B64B4F00439C89 /* mac-32x32@2x.png in Resources */,
+				3463A68821B64B4F00439C89 /* mac-512x512.png in Resources */,
+				2E8E08872347F3ED006560BB /* main_icon.png in Resources */,
+				3463A68621B64B4F00439C89 /* mac-256x256.png in Resources */,
+				3463A68721B64B4F00439C89 /* mac-256x256@2x.png in Resources */,
+				2EFCCD711D37217A00E56276 /* Assets.xcassets in Resources */,
+				2E8E08852347F3ED006560BB /* Retina@256.png in Resources */,
+				2EEBB29E1DCA2AC2001D4BBA /* Main.storyboard in Resources */,
+				3463A68C21B64B4F00439C89 /* mac-32x32.png in Resources */,
+				3463A68421B64B4F00439C89 /* mac-128x128.png in Resources */,
+				3463A68921B64B4F00439C89 /* mac-512x512@2x.png in Resources */,
+				2E8E08822347F3ED006560BB /* icon@64.png in Resources */,
+				2E8E08832347F3ED006560BB /* Retina@128.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EFCCD781D37217A00E56276 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EFCCD831D37217A00E56276 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2EFCCD601D37217A00E56276 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EFCCD6F1D37217A00E56276 /* ViewController.m in Sources */,
+				2EFCCD691D37217A00E56276 /* AppDelegate.m in Sources */,
+				2EDD89AE1D55980000CFA971 /* InfoViewController.m in Sources */,
+				3463A69A21B64D5B00439C89 /* SnowScene.m in Sources */,
+				2E0FE6951D381859003EEF69 /* TimerTableViewController.m in Sources */,
+				2E1892201DC988D30048F7A4 /* main.m in Sources */,
+				2E41E6B01DA315E30029DB3C /* ChangeTimer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EFCCD761D37217A00E56276 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EFCCD7F1D37217A00E56276 /* uTime_OSXTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EFCCD811D37217A00E56276 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EFCCD8A1D37217A00E56276 /* uTime_OSXUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2EFCCD7C1D37217A00E56276 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2EFCCD631D37217A00E56276 /* uTime */;
+			targetProxy = 2EFCCD7B1D37217A00E56276 /* PBXContainerItemProxy */;
+		};
+		2EFCCD871D37217A00E56276 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2EFCCD631D37217A00E56276 /* uTime */;
+			targetProxy = 2EFCCD861D37217A00E56276 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2EFCCD8C1D37217A00E56276 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2EFCCD8D1D37217A00E56276 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2EFCCD8F1D37217A00E56276 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = macCons;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = uTime.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MCRTE5CC2K;
+				INFOPLIST_FILE = "uTime OSX/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.uapps.uTime.uTime-OSX";
+				PRODUCT_NAME = uTime;
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "uTime OSX/uTime OSX-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2EFCCD901D37217A00E56276 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = macCons;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = uTime.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MCRTE5CC2K;
+				INFOPLIST_FILE = "uTime OSX/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.uapps.uTime.uTime-OSX";
+				PRODUCT_NAME = uTime;
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "uTime OSX/uTime OSX-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		2EFCCD921D37217A00E56276 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "uTime OSXTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.uapps.uTime.uTime-OSXTests";
+				PRODUCT_NAME = uTime;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/uTime.app/Contents/MacOS/uTime";
+			};
+			name = Debug;
+		};
+		2EFCCD931D37217A00E56276 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "uTime OSXTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.uapps.uTime.uTime-OSXTests";
+				PRODUCT_NAME = uTime;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/uTime.app/Contents/MacOS/uTime";
+			};
+			name = Release;
+		};
+		2EFCCD951D37217A00E56276 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "uTime OSXUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.uapps.uTime.uTime-OSXUITests";
+				PRODUCT_NAME = uTime;
+				TEST_TARGET_NAME = "uTime OSX";
+			};
+			name = Debug;
+		};
+		2EFCCD961D37217A00E56276 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "uTime OSXUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.uapps.uTime.uTime-OSXUITests";
+				PRODUCT_NAME = uTime;
+				TEST_TARGET_NAME = "uTime OSX";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2EFCCD5F1D37217A00E56276 /* Build configuration list for PBXProject "uTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EFCCD8C1D37217A00E56276 /* Debug */,
+				2EFCCD8D1D37217A00E56276 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EFCCD8E1D37217A00E56276 /* Build configuration list for PBXNativeTarget "uTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EFCCD8F1D37217A00E56276 /* Debug */,
+				2EFCCD901D37217A00E56276 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EFCCD911D37217A00E56276 /* Build configuration list for PBXNativeTarget "uTimeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EFCCD921D37217A00E56276 /* Debug */,
+				2EFCCD931D37217A00E56276 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EFCCD941D37217A00E56276 /* Build configuration list for PBXNativeTarget "uTimeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EFCCD951D37217A00E56276 /* Debug */,
+				2EFCCD961D37217A00E56276 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2EFCCD5C1D37217A00E56276 /* Project object */;
+}
