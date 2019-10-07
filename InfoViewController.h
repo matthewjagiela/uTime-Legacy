@@ -19,6 +19,7 @@
 @property (weak) IBOutlet NSTextField *webNewsLabel;
 @property (weak) IBOutlet NSTextField *webNewVersion;
 @property (strong) IBOutlet NSButton *privacyButton;
+@property (weak) IBOutlet NSButton *uTime4Button;
 
 
 - (IBAction)webSupport:(id)sender;
