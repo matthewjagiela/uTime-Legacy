@@ -133,7 +133,6 @@
 - (IBAction)uTime4Info:(id)sender {
     //This method is going to either go to the web page with uTime 4 macOS info or to the macOS Download page
     NSProcessInfo *pinfo = [NSProcessInfo processInfo];
-
     NSArray *sysInfo = [[pinfo operatingSystemVersionString] componentsSeparatedByString:@" "]; //1 is what the version number is
     double version = [sysInfo[1] doubleValue];
     if(version < 10.15){

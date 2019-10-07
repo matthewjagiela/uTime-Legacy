@@ -203,7 +203,7 @@
                                             <tableColumns>
                                                 <tableColumn width="271" minWidth="40" maxWidth="1000" id="pGb-5F-pAd">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Timers:">
-                                                        <font key="font" metaFont="label" size="11"/>
+                                                        <font key="font" metaFont="message" size="11"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                                     </tableHeaderCell>
@@ -342,11 +342,11 @@
             <objects>
                 <viewController id="bsA-Ju-hqt" customClass="InfoViewController" sceneMemberID="viewController">
                     <view key="view" id="uHQ-69-i9W">
-                        <rect key="frame" x="0.0" y="0.0" width="777" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="777" height="611"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <visualEffectView appearanceType="vibrantDark" blendingMode="behindWindow" material="appearanceBased" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="QnN-RY-qfF">
-                                <rect key="frame" x="0.0" y="0.0" width="777" height="548"/>
+                                <rect key="frame" x="0.0" y="0.0" width="777" height="611"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lEq-Z3-F2H">
                                         <rect key="frame" x="18" y="67" width="741" height="22"/>
@@ -411,9 +411,9 @@
                                         </textFieldCell>
                                     </textField>
                                     <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8jN-5C-7h9">
-                                        <rect key="frame" x="0.0" y="280" width="777" height="268"/>
+                                        <rect key="frame" x="0.0" y="280" width="777" height="331"/>
                                         <clipView key="contentView" drawsBackground="NO" id="WPF-Rx-ncp">
-                                            <rect key="frame" x="1" y="1" width="760" height="266"/>
+                                            <rect key="frame" x="1" y="1" width="760" height="329"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <textView editable="NO" importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" linkDetection="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="XQc-52-UFs">
@@ -421,7 +421,7 @@
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                    <size key="minSize" width="760" height="266"/>
+                                                    <size key="minSize" width="760" height="329"/>
                                                     <size key="maxSize" width="777" height="10000000"/>
                                                     <attributedString key="textStorage">
                                                         <fragment>
@@ -677,8 +677,8 @@ As I am new to OS X development the app layout and functionality will change pro
                                             <rect key="frame" x="-100" y="-100" width="87" height="18"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
-                                        <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="0.1811320754716981" horizontal="NO" id="BWP-op-vqF">
-                                            <rect key="frame" x="761" y="1" width="15" height="266"/>
+                                        <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="0.1875" horizontal="NO" id="BWP-op-vqF">
+                                            <rect key="frame" x="761" y="1" width="15" height="329"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
                                     </scrollView>
