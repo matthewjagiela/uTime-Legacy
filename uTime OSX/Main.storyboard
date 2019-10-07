@@ -373,7 +373,10 @@
                                         </textFieldCell>
                                     </textField>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="IC6-j3-3KR">
-                                        <rect key="frame" x="14" y="232" width="380" height="32"/>
+                                        <rect key="frame" x="14" y="253" width="380" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="368" id="DCQ-Oa-ciJ"/>
+                                        </constraints>
                                         <buttonCell key="cell" type="push" title="Web Support" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ebx-sS-CEk">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="menu" size="14"/>
@@ -382,18 +385,31 @@
                                             <action selector="webSupport:" target="bsA-Ju-hqt" id="D5x-uZ-kfe"/>
                                         </connections>
                                     </button>
-                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="181-K9-Q9l">
-                                        <rect key="frame" x="14" y="199" width="380" height="32"/>
-                                        <buttonCell key="cell" type="push" title="Download uTime for iOS (Free)" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="zNs-ur-KWg">
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4Wu-pb-OIo">
+                                        <rect key="frame" x="14" y="220" width="380" height="32"/>
+                                        <buttonCell key="cell" type="push" title="uTime 4 for macOS Information" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xqJ-nv-l56">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="menu" size="14"/>
                                         </buttonCell>
                                         <connections>
-                                            <action selector="uTimeiOS:" target="bsA-Ju-hqt" id="Yur-PC-wKy"/>
+                                            <action selector="uTime4Info:" target="bsA-Ju-hqt" id="GXI-9O-6iP"/>
+                                        </connections>
+                                    </button>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="SvM-TR-U4W">
+                                        <rect key="frame" x="383" y="225" width="380" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="11" id="kKh-Pc-1Vf"/>
+                                        </constraints>
+                                        <buttonCell key="cell" type="push" title="uTime 4 for macOS Information" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xbX-FT-Pxt">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="menu" size="14"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="uTime4Info:" target="bsA-Ju-hqt" id="gJg-7T-BJd"/>
                                         </connections>
                                     </button>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xR8-R0-wAg">
-                                        <rect key="frame" x="14" y="166" width="749" height="32"/>
+                                        <rect key="frame" x="14" y="154" width="749" height="32"/>
                                         <buttonCell key="cell" type="push" title="Close" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="NeD-II-hYi">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="menu" size="14"/>
@@ -411,18 +427,18 @@
                                         </textFieldCell>
                                     </textField>
                                     <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8jN-5C-7h9">
-                                        <rect key="frame" x="0.0" y="280" width="777" height="331"/>
+                                        <rect key="frame" x="0.0" y="293" width="777" height="318"/>
                                         <clipView key="contentView" drawsBackground="NO" id="WPF-Rx-ncp">
-                                            <rect key="frame" x="1" y="1" width="760" height="329"/>
+                                            <rect key="frame" x="1" y="1" width="760" height="316"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <textView editable="NO" importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" linkDetection="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="XQc-52-UFs">
-                                                    <rect key="frame" x="0.0" y="0.0" width="760" height="2121"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="760" height="2108"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                    <size key="minSize" width="760" height="329"/>
-                                                    <size key="maxSize" width="777" height="10000000"/>
+                                                    <size key="minSize" width="760" height="316"/>
+                                                    <size key="maxSize" width="1271" height="10000000"/>
                                                     <attributedString key="textStorage">
                                                         <fragment>
                                                             <mutableString key="content">What's New:
@@ -677,17 +693,13 @@ As I am new to OS X development the app layout and functionality will change pro
                                             <rect key="frame" x="-100" y="-100" width="87" height="18"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
-                                        <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="0.1875" horizontal="NO" id="BWP-op-vqF">
-                                            <rect key="frame" x="761" y="1" width="15" height="329"/>
+                                        <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="0.16350446428571427" horizontal="NO" id="BWP-op-vqF">
+                                            <rect key="frame" x="761" y="1" width="15" height="316"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
                                     </scrollView>
                                     <button translatesAutoresizingMaskIntoConstraints="NO" id="UV0-vZ-vI1">
-                                        <rect key="frame" x="321" y="130" width="135" height="25"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="131" id="W8q-Sx-hdF"/>
-                                            <constraint firstAttribute="height" constant="21" id="doS-G8-9K8"/>
-                                        </constraints>
+                                        <rect key="frame" x="321" y="137" width="135" height="18"/>
                                         <buttonCell key="cell" type="check" title="Sort By Date" bezelStyle="regularSquare" imagePosition="left" inset="2" id="u4B-sh-gSj">
                                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                             <font key="font" metaFont="system"/>
@@ -697,7 +709,7 @@ As I am new to OS X development the app layout and functionality will change pro
                                         </connections>
                                     </button>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="leZ-W6-edn">
-                                        <rect key="frame" x="383" y="232" width="380" height="32"/>
+                                        <rect key="frame" x="383" y="253" width="380" height="32"/>
                                         <buttonCell key="cell" type="push" title="uTime Privacy" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="mJ9-Bh-Tdu">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="menu" size="14"/>
@@ -706,58 +718,62 @@ As I am new to OS X development the app layout and functionality will change pro
                                             <action selector="privacyView:" target="bsA-Ju-hqt" id="eIQ-xB-xbg"/>
                                         </connections>
                                     </button>
-                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4Wu-pb-OIo">
-                                        <rect key="frame" x="383" y="199" width="380" height="32"/>
-                                        <buttonCell key="cell" type="push" title="uTime 4 for macOS" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xqJ-nv-l56">
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="181-K9-Q9l">
+                                        <rect key="frame" x="14" y="187" width="749" height="32"/>
+                                        <buttonCell key="cell" type="push" title="Download uTime for iOS (Free)" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="zNs-ur-KWg">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="menu" size="14"/>
                                         </buttonCell>
                                         <connections>
-                                            <action selector="uTime4Info:" target="bsA-Ju-hqt" id="GXI-9O-6iP"/>
+                                            <action selector="uTimeiOS:" target="bsA-Ju-hqt" id="Yur-PC-wKy"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="0ai-Tw-SsZ" firstAttribute="leading" secondItem="lEq-Z3-F2H" secondAttribute="leading" id="2mb-Pa-5jd"/>
-                                    <constraint firstItem="xR8-R0-wAg" firstAttribute="leading" secondItem="0ai-Tw-SsZ" secondAttribute="leading" id="6Zu-jD-CQR"/>
-                                    <constraint firstItem="uLw-eD-iiu" firstAttribute="top" secondItem="lEq-Z3-F2H" secondAttribute="bottom" constant="8" symbolic="YES" id="8bx-sc-WOr"/>
-                                    <constraint firstAttribute="trailing" secondItem="IC6-j3-3KR" secondAttribute="trailing" constant="389" id="9Ze-dF-RCf"/>
-                                    <constraint firstItem="181-K9-Q9l" firstAttribute="top" secondItem="IC6-j3-3KR" secondAttribute="bottom" constant="12" symbolic="YES" id="BmC-0M-Wwt"/>
-                                    <constraint firstItem="xR8-R0-wAg" firstAttribute="trailing" secondItem="0ai-Tw-SsZ" secondAttribute="trailing" id="ENQ-Gv-jy5"/>
-                                    <constraint firstItem="leZ-W6-edn" firstAttribute="trailing" secondItem="4Wu-pb-OIo" secondAttribute="trailing" id="El2-p3-RMv"/>
-                                    <constraint firstItem="8jN-5C-7h9" firstAttribute="top" secondItem="QnN-RY-qfF" secondAttribute="top" id="GHi-mX-yuQ"/>
-                                    <constraint firstAttribute="bottom" secondItem="HN8-am-pXf" secondAttribute="bottom" constant="13" id="GLs-6p-qyK"/>
-                                    <constraint firstItem="4Wu-pb-OIo" firstAttribute="trailing" secondItem="xR8-R0-wAg" secondAttribute="trailing" id="H4w-qg-MH4"/>
-                                    <constraint firstItem="8jN-5C-7h9" firstAttribute="centerX" secondItem="xR8-R0-wAg" secondAttribute="centerX" id="HTc-be-zmg"/>
-                                    <constraint firstItem="UV0-vZ-vI1" firstAttribute="top" secondItem="xR8-R0-wAg" secondAttribute="bottom" constant="20" symbolic="YES" id="KAv-WA-Ffp"/>
-                                    <constraint firstItem="IC6-j3-3KR" firstAttribute="leading" secondItem="QnN-RY-qfF" secondAttribute="leading" constant="20" symbolic="YES" id="OMa-be-8Km"/>
-                                    <constraint firstItem="leZ-W6-edn" firstAttribute="leading" secondItem="4Wu-pb-OIo" secondAttribute="leading" id="Ps3-cV-nog"/>
-                                    <constraint firstItem="leZ-W6-edn" firstAttribute="leading" secondItem="IC6-j3-3KR" secondAttribute="trailing" constant="1" id="QN1-VI-woO"/>
-                                    <constraint firstItem="IC6-j3-3KR" firstAttribute="trailing" secondItem="181-K9-Q9l" secondAttribute="trailing" id="Rcy-ER-5NE"/>
-                                    <constraint firstItem="IC6-j3-3KR" firstAttribute="top" secondItem="8jN-5C-7h9" secondAttribute="bottom" constant="20" symbolic="YES" id="TMd-Ee-EXP"/>
-                                    <constraint firstItem="lEq-Z3-F2H" firstAttribute="leading" secondItem="uLw-eD-iiu" secondAttribute="leading" id="UEO-4O-Yyv"/>
-                                    <constraint firstItem="HN8-am-pXf" firstAttribute="top" secondItem="uLw-eD-iiu" secondAttribute="bottom" constant="8" symbolic="YES" id="UbN-Ok-rMg"/>
-                                    <constraint firstItem="lEq-Z3-F2H" firstAttribute="top" secondItem="0ai-Tw-SsZ" secondAttribute="bottom" constant="8" symbolic="YES" id="Wpf-LG-iZo"/>
-                                    <constraint firstItem="0ai-Tw-SsZ" firstAttribute="top" secondItem="UV0-vZ-vI1" secondAttribute="bottom" constant="13" id="Xyz-2U-FOR"/>
-                                    <constraint firstItem="181-K9-Q9l" firstAttribute="baseline" secondItem="4Wu-pb-OIo" secondAttribute="baseline" id="cQk-zE-KiY"/>
-                                    <constraint firstItem="0ai-Tw-SsZ" firstAttribute="trailing" secondItem="lEq-Z3-F2H" secondAttribute="trailing" id="cte-gM-Qdo"/>
-                                    <constraint firstItem="UV0-vZ-vI1" firstAttribute="centerX" secondItem="0ai-Tw-SsZ" secondAttribute="centerX" id="fhQ-4X-MAw"/>
-                                    <constraint firstItem="8jN-5C-7h9" firstAttribute="leading" secondItem="QnN-RY-qfF" secondAttribute="leading" id="hSF-wj-QZG"/>
-                                    <constraint firstItem="IC6-j3-3KR" firstAttribute="leading" secondItem="181-K9-Q9l" secondAttribute="leading" id="mFu-mh-Lce"/>
-                                    <constraint firstItem="uLw-eD-iiu" firstAttribute="centerX" secondItem="HN8-am-pXf" secondAttribute="centerX" id="nvC-Fq-EAx"/>
-                                    <constraint firstItem="181-K9-Q9l" firstAttribute="leading" secondItem="xR8-R0-wAg" secondAttribute="leading" id="otC-hh-pFh"/>
-                                    <constraint firstItem="leZ-W6-edn" firstAttribute="baseline" secondItem="IC6-j3-3KR" secondAttribute="baseline" id="pW4-cL-w96"/>
-                                    <constraint firstItem="xR8-R0-wAg" firstAttribute="top" secondItem="181-K9-Q9l" secondAttribute="bottom" constant="12" symbolic="YES" id="w4Y-fr-dni"/>
-                                    <constraint firstItem="lEq-Z3-F2H" firstAttribute="trailing" secondItem="uLw-eD-iiu" secondAttribute="trailing" id="wff-wB-htw"/>
-                                    <constraint firstItem="8jN-5C-7h9" firstAttribute="centerX" secondItem="IC6-j3-3KR" secondAttribute="centerX" constant="184.5" id="z7F-Kh-HDq"/>
+                                    <constraint firstItem="xR8-R0-wAg" firstAttribute="leading" secondItem="QnN-RY-qfF" secondAttribute="leading" constant="20" id="03c-sD-gvW"/>
+                                    <constraint firstItem="4Wu-pb-OIo" firstAttribute="centerY" secondItem="SvM-TR-U4W" secondAttribute="centerY" id="09q-qh-pfR"/>
+                                    <constraint firstAttribute="trailing" secondItem="8jN-5C-7h9" secondAttribute="trailing" id="0nI-Y8-dkg"/>
+                                    <constraint firstItem="xR8-R0-wAg" firstAttribute="top" secondItem="181-K9-Q9l" secondAttribute="bottom" constant="12" id="2RI-UD-Mpa"/>
+                                    <constraint firstItem="4Wu-pb-OIo" firstAttribute="leading" secondItem="181-K9-Q9l" secondAttribute="leading" id="2VI-Sl-eUl"/>
+                                    <constraint firstItem="8jN-5C-7h9" firstAttribute="top" secondItem="QnN-RY-qfF" secondAttribute="top" id="8vd-t9-m5f"/>
+                                    <constraint firstAttribute="trailing" secondItem="181-K9-Q9l" secondAttribute="trailing" constant="20" id="BYJ-J3-58F"/>
+                                    <constraint firstItem="SvM-TR-U4W" firstAttribute="trailing" secondItem="181-K9-Q9l" secondAttribute="trailing" id="Bzx-g3-emA"/>
+                                    <constraint firstItem="leZ-W6-edn" firstAttribute="trailing" secondItem="SvM-TR-U4W" secondAttribute="trailing" id="CVl-F1-Zhp"/>
+                                    <constraint firstItem="UV0-vZ-vI1" firstAttribute="leading" secondItem="QnN-RY-qfF" secondAttribute="leading" constant="323" id="G9S-LY-qj1"/>
+                                    <constraint firstAttribute="trailing" secondItem="xR8-R0-wAg" secondAttribute="trailing" constant="20" id="HCL-Yt-2Su"/>
+                                    <constraint firstItem="lEq-Z3-F2H" firstAttribute="top" secondItem="0ai-Tw-SsZ" secondAttribute="bottom" constant="8" id="Jtu-WJ-Ypt"/>
+                                    <constraint firstItem="0ai-Tw-SsZ" firstAttribute="top" secondItem="UV0-vZ-vI1" secondAttribute="bottom" constant="20" id="Kz2-ZT-xj7"/>
+                                    <constraint firstAttribute="trailing" secondItem="HN8-am-pXf" secondAttribute="trailing" constant="326" id="Njg-dh-rmE"/>
+                                    <constraint firstItem="leZ-W6-edn" firstAttribute="leading" secondItem="IC6-j3-3KR" secondAttribute="trailing" constant="1" id="NlP-c1-S8I"/>
+                                    <constraint firstAttribute="trailing" secondItem="lEq-Z3-F2H" secondAttribute="trailing" constant="20" id="OTN-Re-w0D"/>
+                                    <constraint firstAttribute="bottom" secondItem="8jN-5C-7h9" secondAttribute="bottom" constant="293" id="Sg9-XN-ZZj"/>
+                                    <constraint firstItem="IC6-j3-3KR" firstAttribute="trailing" secondItem="4Wu-pb-OIo" secondAttribute="trailing" id="TEI-Gq-4GS"/>
+                                    <constraint firstItem="IC6-j3-3KR" firstAttribute="baseline" secondItem="leZ-W6-edn" secondAttribute="baseline" id="XaA-3F-SvK"/>
+                                    <constraint firstItem="IC6-j3-3KR" firstAttribute="leading" secondItem="4Wu-pb-OIo" secondAttribute="leading" id="XyV-3Z-kZ0"/>
+                                    <constraint firstAttribute="trailing" secondItem="UV0-vZ-vI1" secondAttribute="trailing" constant="323" id="bff-hJ-Hvw"/>
+                                    <constraint firstItem="UV0-vZ-vI1" firstAttribute="top" secondItem="xR8-R0-wAg" secondAttribute="bottom" constant="8" id="dGI-iL-lWR"/>
+                                    <constraint firstItem="181-K9-Q9l" firstAttribute="top" secondItem="4Wu-pb-OIo" secondAttribute="bottom" constant="12" symbolic="YES" id="g7n-36-dlT"/>
+                                    <constraint firstItem="uLw-eD-iiu" firstAttribute="leading" secondItem="QnN-RY-qfF" secondAttribute="leading" constant="20" id="gcC-4P-Vgf"/>
+                                    <constraint firstAttribute="trailing" secondItem="0ai-Tw-SsZ" secondAttribute="trailing" constant="20" id="hY9-vs-36R"/>
+                                    <constraint firstItem="0ai-Tw-SsZ" firstAttribute="leading" secondItem="QnN-RY-qfF" secondAttribute="leading" constant="20" id="iz3-hH-8Dq"/>
+                                    <constraint firstItem="8jN-5C-7h9" firstAttribute="leading" secondItem="QnN-RY-qfF" secondAttribute="leading" id="laI-Nf-yI9"/>
+                                    <constraint firstItem="4Wu-pb-OIo" firstAttribute="top" secondItem="IC6-j3-3KR" secondAttribute="bottom" constant="12" symbolic="YES" id="mcB-eL-yxe"/>
+                                    <constraint firstItem="IC6-j3-3KR" firstAttribute="top" secondItem="8jN-5C-7h9" secondAttribute="bottom" constant="12" id="nZj-39-DVQ"/>
+                                    <constraint firstItem="uLw-eD-iiu" firstAttribute="top" secondItem="lEq-Z3-F2H" secondAttribute="bottom" constant="8" id="nef-Sa-loO"/>
+                                    <constraint firstItem="181-K9-Q9l" firstAttribute="leading" secondItem="QnN-RY-qfF" secondAttribute="leading" constant="20" id="pyd-pT-ah8"/>
+                                    <constraint firstAttribute="trailing" secondItem="uLw-eD-iiu" secondAttribute="trailing" constant="20" id="sxo-Eo-hzw"/>
+                                    <constraint firstItem="HN8-am-pXf" firstAttribute="top" secondItem="uLw-eD-iiu" secondAttribute="bottom" constant="8" id="uiY-rZ-Q9y"/>
+                                    <constraint firstItem="HN8-am-pXf" firstAttribute="leading" secondItem="QnN-RY-qfF" secondAttribute="leading" constant="327" id="w2G-8R-1tE"/>
+                                    <constraint firstItem="leZ-W6-edn" firstAttribute="leading" secondItem="SvM-TR-U4W" secondAttribute="leading" id="xDI-yW-edl"/>
+                                    <constraint firstItem="lEq-Z3-F2H" firstAttribute="leading" secondItem="QnN-RY-qfF" secondAttribute="leading" constant="20" id="zuk-Ij-mEg"/>
                                 </constraints>
                             </visualEffectView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="QnN-RY-qfF" firstAttribute="leading" secondItem="uHQ-69-i9W" secondAttribute="leading" id="5MC-KG-6xa"/>
-                            <constraint firstAttribute="trailing" secondItem="QnN-RY-qfF" secondAttribute="trailing" id="8uL-8F-RmZ"/>
-                            <constraint firstAttribute="bottom" secondItem="QnN-RY-qfF" secondAttribute="bottom" id="KjC-eG-c8e"/>
-                            <constraint firstItem="QnN-RY-qfF" firstAttribute="top" secondItem="uHQ-69-i9W" secondAttribute="top" id="qoW-Ub-uAy"/>
+                            <constraint firstAttribute="bottom" secondItem="QnN-RY-qfF" secondAttribute="bottom" id="Ejt-kf-aBz"/>
+                            <constraint firstItem="QnN-RY-qfF" firstAttribute="top" secondItem="uHQ-69-i9W" secondAttribute="top" id="TQM-fO-bos"/>
+                            <constraint firstAttribute="trailing" secondItem="QnN-RY-qfF" secondAttribute="trailing" id="WVj-Ea-ATg"/>
+                            <constraint firstItem="QnN-RY-qfF" firstAttribute="leading" secondItem="uHQ-69-i9W" secondAttribute="leading" id="lgZ-eW-lb0"/>
                         </constraints>
                     </view>
                     <touchBar key="touchBar" id="8Ng-rx-soE">
@@ -793,7 +809,7 @@ As I am new to OS X development the app layout and functionality will change pro
                 </viewController>
                 <customObject id="fCG-xV-alz" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1118.5" y="955"/>
+            <point key="canvasLocation" x="1118.5" y="954.5"/>
         </scene>
         <!--Change Timer-->
         <scene sceneID="O3g-qP-jgl">
