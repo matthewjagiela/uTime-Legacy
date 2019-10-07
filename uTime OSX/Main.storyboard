@@ -203,7 +203,7 @@
                                             <tableColumns>
                                                 <tableColumn width="271" minWidth="40" maxWidth="1000" id="pGb-5F-pAd">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Timers:">
-                                                        <font key="font" metaFont="message" size="11"/>
+                                                        <font key="font" metaFont="label" size="11"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                                     </tableHeaderCell>
@@ -400,7 +400,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="11" id="kKh-Pc-1Vf"/>
                                         </constraints>
-                                        <buttonCell key="cell" type="push" title="uTime 4 for macOS Information" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xbX-FT-Pxt">
+                                        <buttonCell key="cell" type="push" title="uTime 4 for macOS Download" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xbX-FT-Pxt">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="menu" size="14"/>
                                         </buttonCell>
@@ -693,7 +693,7 @@ As I am new to OS X development the app layout and functionality will change pro
                                             <rect key="frame" x="-100" y="-100" width="87" height="18"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
-                                        <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="0.16350446428571427" horizontal="NO" id="BWP-op-vqF">
+                                        <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="0.15345982142857142" horizontal="NO" id="BWP-op-vqF">
                                             <rect key="frame" x="761" y="1" width="15" height="316"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
