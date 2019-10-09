@@ -130,4 +130,9 @@
     NSURL *supportURL = [NSURL URLWithString:@"https://uappsios.com/utime-privacy-policy/"];
     [[NSWorkspace sharedWorkspace]openURL:supportURL];
 }
+- (IBAction)uTime4Info:(id)sender {
+    //This method is going to either go to the web page with uTime 4 macOS info or to the macOS Download page
+   NSURL *supportURL = [NSURL URLWithString:@"https://uappsios.com/utime-4-macos-migration-info/"];
+      [[NSWorkspace sharedWorkspace]openURL:supportURL];
+}
 @end
