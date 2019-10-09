@@ -203,7 +203,7 @@
                                             <tableColumns>
                                                 <tableColumn width="271" minWidth="40" maxWidth="1000" id="pGb-5F-pAd">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Timers:">
-                                                        <font key="font" metaFont="menu" size="11"/>
+                                                        <font key="font" metaFont="label" size="11"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                                     </tableHeaderCell>
@@ -433,7 +433,7 @@
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <textView editable="NO" importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" linkDetection="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="XQc-52-UFs">
-                                                    <rect key="frame" x="0.0" y="0.0" width="760" height="2194"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="760" height="2476"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -441,9 +441,28 @@
                                                     <size key="maxSize" width="1271" height="10000000"/>
                                                     <attributedString key="textStorage">
                                                         <fragment>
-                                                            <mutableString key="content">What's New:
-3.0.8:
-
+                                                            <string key="content">What's New:
+</string>
+                                                            <attributes>
+                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment>
+                                                            <string key="content">3.0.8:
+- uTime is becoming a macOS Catalyst app! This means that this app will not be getting updates unless there is a major fix. To read more about this change please hit uTime 4 macOS Information.
+-uTime 3 will stick around on the app store for legacy users of the platform. If you are on macOS Catalina and want to download the new uTime please  use the download uTime 4 for macOS Button.
+-Thank you
+</string>
+                                                            <attributes>
+                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment>
+                                                            <mutableString key="content">
 3.0.7:
 -Fixed a bunch of iCloud syncing with iOS...
 -Fixed a bug where Sorting by date would become disabled after quitting the app.
