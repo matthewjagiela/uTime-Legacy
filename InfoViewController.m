@@ -135,4 +135,8 @@
    NSURL *supportURL = [NSURL URLWithString:@"https://uappsios.com/utime-4-macos-migration-info/"];
       [[NSWorkspace sharedWorkspace]openURL:supportURL];
 }
+- (IBAction)uTime4macDownload:(id)sender {
+    NSURL *supportURL = [NSURL URLWithString:@"https://apps.apple.com/us/app/utime-universal/id1482578737?ls=1&mt=12"];
+    [[NSWorkspace sharedWorkspace]openURL:supportURL];
+}
 @end
