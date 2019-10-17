@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do view setup here.
-    [_currentVersion setStringValue:@"Currently Running Version 3.0.7"];
+    [_currentVersion setStringValue:@"Currently Running Version 3.0.8"];
     //[self internetLabels];
     NSTimer *countdownTimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(touchBarStuff) userInfo:nil repeats:YES];
     if([[NSUbiquitousKeyValueStore defaultStore]boolForKey:@"sortDate"]){
@@ -128,6 +128,15 @@
 
 - (IBAction)privacyView:(id)sender {
     NSURL *supportURL = [NSURL URLWithString:@"https://uappsios.com/utime-privacy-policy/"];
+    [[NSWorkspace sharedWorkspace]openURL:supportURL];
+}
+- (IBAction)uTime4Info:(id)sender {
+    //This method is going to either go to the web page with uTime 4 macOS info or to the macOS Download page
+   NSURL *supportURL = [NSURL URLWithString:@"https://uappsios.com/utime-4-macos-migration-info/"];
+      [[NSWorkspace sharedWorkspace]openURL:supportURL];
+}
+- (IBAction)uTime4macDownload:(id)sender {
+    NSURL *supportURL = [NSURL URLWithString:@"https://apps.apple.com/us/app/utime-universal/id1482578737?ls=1&mt=12"];
     [[NSWorkspace sharedWorkspace]openURL:supportURL];
 }
 @end
