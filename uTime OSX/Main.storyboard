@@ -445,7 +445,7 @@
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <textView editable="NO" importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" linkDetection="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="XQc-52-UFs">
-                                                    <rect key="frame" x="0.0" y="0.0" width="775" height="1554"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="775" height="1890"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -454,8 +454,9 @@
                                                     <attributedString key="textStorage">
                                                         <fragment>
                                                             <mutableString key="content">What's New:
-3.0.9:
+3.1:
 -Added an on screen delete button for timers.
+-Added the new way to check app info (backend).
 
 3.0.8:
 - uTime is becoming a macOS Catalyst app! This means that this app will not be getting updates unless there is a major fix. To read more about this change please hit uTime 4 macOS Information.
