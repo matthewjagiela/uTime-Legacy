@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "uTime-Swift.h"
 
 @interface AppDelegate ()
 @property (weak) IBOutlet NSWindow *window;
@@ -35,6 +36,7 @@
     [_window setLevel:NSFloatingWindowLevel];
     [self.window setLevel:NSFloatingWindowLevel];
     [[NSUserNotificationCenter defaultUserNotificationCenter]removeAllDeliveredNotifications];
+    [[AppInfoHandler alloc]init]; //load JSON
 }
 - (BOOL)userNotificationCenter:(NSUserNotificationCenter *)center shouldPresentNotification:(NSUserNotification *)notification{
     return YES;
