@@ -8,6 +8,7 @@
 
 #import "InfoViewController.h"
 #import "ViewController.h"
+#import "uTime-Swift.h"
 
 
 @interface InfoViewController ()
@@ -16,10 +17,12 @@
 
 @implementation InfoViewController
 
+AppInfoHandler *app;
 - (void)viewDidLoad {
+    app = [[AppInfoHandler alloc]init];
     [super viewDidLoad];
     // Do view setup here.
-    [_currentVersion setStringValue:@"Currently Running Version 3.0.8"];
+    [_currentVersion setStringValue:@"Currently Running Version 3.1"];
     //[self internetLabels];
     NSTimer *countdownTimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(touchBarStuff) userInfo:nil repeats:YES];
     if([[NSUbiquitousKeyValueStore defaultStore]boolForKey:@"sortDate"]){
@@ -69,30 +72,11 @@
     [_touchLabel setStringValue:[home countDown]];
     
 }
--(void)internetLabels{ //if sandbox networking (out and in) are off this will fail.
-    NSString *getWebInfo = @"https://matthewjagiela.github.io/uApps-HTML/"; //The url of the file to read
-    
-    NSError *error; //Error
-    
-    
-    NSURL *URLFormat = [NSURL URLWithString:getWebInfo];
-    
-    @try{
-        NSString *webFormat = [NSString stringWithContentsOfURL:URLFormat encoding:NSASCIIStringEncoding error:&error];
-        NSCharacterSet *newlineCharSet = [NSCharacterSet newlineCharacterSet];
-        NSArray *lines = [webFormat componentsSeparatedByCharactersInSet:newlineCharSet];
-        for (int i = 0; i < lines.count; i++) {
-            NSLog(@"I = %i = %@",i,lines[i]);
-        }
-        [_webNewVersion setStringValue:lines[3]];
-        [_webNewsLabel setStringValue:lines[4]];
-
-    }
-    @catch(NSException *exception)
-    {
-        
-    }
-    
+// MARK: - Internet Labels
+-(void)internetLabels{ //if sandbox networking (out and in) are off this will fail.]
+    //[_webNewsLabel setStringValue: app.intern]
+    [_webNewsLabel setStringValue:[NSString stringWithFormat:@"%@",app.internetInfo.uAppsNews]];
+    [_webNewVersion setStringValue:[NSString stringWithFormat:@"Newest Version: %@",app.internetInfo.uTimeVersion]];
 }
 - (IBAction)webSupport:(id)sender {
     NSURL *supportURL = [NSURL URLWithString:@"https://uappsios.com/utime-macos-support/"];

@@ -16,6 +16,7 @@
 		2E119C11234A6B3E0075A5BD /* mRetina@512.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E119C0B234A6B3E0075A5BD /* mRetina@512.png */; };
 		2E1892201DC988D30048F7A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E18921E1DC988D30048F7A4 /* main.m */; };
 		2E1892261DC98C780048F7A4 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E1892251DC98C780048F7A4 /* spark.png */; };
+		2E3B6B5C236BE1BF00133DAA /* AppInfoHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3B6B5B236BE1BF00133DAA /* AppInfoHandler.swift */; };
 		2E41E6B01DA315E30029DB3C /* ChangeTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E41E6AF1DA315E30029DB3C /* ChangeTimer.m */; };
 		2EDD89AE1D55980000CFA971 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDD89AD1D55980000CFA971 /* InfoViewController.m */; };
 		2EEBB29E1DCA2AC2001D4BBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EEBB29D1DCA2AC2001D4BBA /* Main.storyboard */; };
@@ -105,6 +106,7 @@
 		2E18921E1DC988D30048F7A4 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2E18921F1DC988D30048F7A4 /* uTime OSX-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "uTime OSX-Bridging-Header.h"; sourceTree = "<group>"; };
 		2E1892251DC98C780048F7A4 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spark.png; path = "../uTime Today/spark.png"; sourceTree = "<group>"; };
+		2E3B6B5B236BE1BF00133DAA /* AppInfoHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoHandler.swift; sourceTree = "<group>"; };
 		2E41E6AE1DA315E30029DB3C /* ChangeTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeTimer.h; sourceTree = "<group>"; };
 		2E41E6AF1DA315E30029DB3C /* ChangeTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeTimer.m; sourceTree = "<group>"; };
 		2E9F8B9A1DA5784E00C1E5BD /* uTime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = uTime.entitlements; sourceTree = "<group>"; };
@@ -238,6 +240,7 @@
 				2E41E6AE1DA315E30029DB3C /* ChangeTimer.h */,
 				2E41E6AF1DA315E30029DB3C /* ChangeTimer.m */,
 				3463A68F21B64BFB00439C89 /* SnowParticle.sks */,
+				2E3B6B5B236BE1BF00133DAA /* AppInfoHandler.swift */,
 			);
 			path = "uTime OSX";
 			sourceTree = "<group>";
@@ -460,6 +463,7 @@
 			files = (
 				2EFCCD6F1D37217A00E56276 /* ViewController.m in Sources */,
 				2EFCCD691D37217A00E56276 /* AppDelegate.m in Sources */,
+				2E3B6B5C236BE1BF00133DAA /* AppInfoHandler.swift in Sources */,
 				2EDD89AE1D55980000CFA971 /* InfoViewController.m in Sources */,
 				3463A69A21B64D5B00439C89 /* SnowScene.m in Sources */,
 				2E0FE6951D381859003EEF69 /* TimerTableViewController.m in Sources */,
@@ -610,17 +614,18 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 3.0.13;
+				CURRENT_PROJECT_VERSION = 3.1;
 				DEVELOPMENT_TEAM = MCRTE5CC2K;
 				INFOPLIST_FILE = "uTime OSX/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MARKETING_VERSION = 3.0.8;
+				MARKETING_VERSION = 3.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.uapps.uTime.uTime-OSX";
 				PRODUCT_NAME = uTime;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "uTime OSX/uTime OSX-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -633,22 +638,24 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 3.0.13;
+				CURRENT_PROJECT_VERSION = 3.1;
 				DEVELOPMENT_TEAM = MCRTE5CC2K;
 				INFOPLIST_FILE = "uTime OSX/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MARKETING_VERSION = 3.0.8;
+				MARKETING_VERSION = 3.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.uapps.uTime.uTime-OSX";
 				PRODUCT_NAME = uTime;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "uTime OSX/uTime OSX-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 		2EFCCD921D37217A00E56276 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "uTime OSXTests/Info.plist";
@@ -663,6 +670,7 @@
 		2EFCCD931D37217A00E56276 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "uTime OSXTests/Info.plist";
@@ -677,6 +685,7 @@
 		2EFCCD951D37217A00E56276 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "uTime OSXUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -690,6 +699,7 @@
 		2EFCCD961D37217A00E56276 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "uTime OSXUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
