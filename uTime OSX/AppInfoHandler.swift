@@ -29,6 +29,12 @@ import Cocoa
         }
         
     }
+    @objc func labelsFilled(completion: @escaping(InternetInformation) -> Void) {
+        while internetInfo == nil {
+            
+        }
+        completion(internetInfo ?? InternetInformation())
+    }
 }
 open class InternetInformation: NSObject, Decodable {
     @objc public var uTimeVersion: String?
@@ -36,6 +42,9 @@ open class InternetInformation: NSObject, Decodable {
     enum CodingKeys: String, CodingKey {
         case uTimeVersion = "uTime_Legacy"
         case uAppsNews =  "uApps_News"
+    }
+    override init() {
+        super.init()
     }
     public required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)

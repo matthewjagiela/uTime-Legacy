@@ -73,10 +73,12 @@ AppInfoHandler *app;
     
 }
 // MARK: - Internet Labels
--(void)internetLabels{ //if sandbox networking (out and in) are off this will fail.]
-    //[_webNewsLabel setStringValue: app.intern]
-    [_webNewsLabel setStringValue:[NSString stringWithFormat:@"%@",app.internetInfo.uAppsNews]];
-    [_webNewVersion setStringValue:[NSString stringWithFormat:@"Newest Version: %@",app.internetInfo.uTimeVersion]];
+-(void)internetLabels{
+    [app labelsFilledWithCompletion:^(InternetInformation *info) {
+        [self->_webNewsLabel setStringValue:[NSString stringWithFormat:@"%@",info.uAppsNews]];
+        [self->_webNewVersion setStringValue:[NSString stringWithFormat:@"Newest Version %@",info.uTimeVersion]];
+        
+    }];
 }
 - (IBAction)webSupport:(id)sender {
     NSURL *supportURL = [NSURL URLWithString:@"https://uappsios.com/utime-macos-support/"];
