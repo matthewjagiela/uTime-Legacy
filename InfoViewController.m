@@ -22,7 +22,7 @@ AppInfoHandler *app;
     app = [[AppInfoHandler alloc]init];
     [super viewDidLoad];
     // Do view setup here.
-    [_currentVersion setStringValue:@"Currently Running Version 3.1"];
+    [_currentVersion setStringValue:@"Currently Running Version 3.1.1"];
     //[self internetLabels];
     NSTimer *countdownTimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(touchBarStuff) userInfo:nil repeats:YES];
     if([[NSUbiquitousKeyValueStore defaultStore]boolForKey:@"sortDate"]){
