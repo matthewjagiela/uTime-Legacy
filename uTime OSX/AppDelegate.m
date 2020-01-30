@@ -36,7 +36,6 @@
     [_window setLevel:NSFloatingWindowLevel];
     [self.window setLevel:NSFloatingWindowLevel];
     [[NSUserNotificationCenter defaultUserNotificationCenter]removeAllDeliveredNotifications];
-    [[AppInfoHandler alloc]init]; //load JSON
 }
 - (BOOL)userNotificationCenter:(NSUserNotificationCenter *)center shouldPresentNotification:(NSUserNotification *)notification{
     return YES;

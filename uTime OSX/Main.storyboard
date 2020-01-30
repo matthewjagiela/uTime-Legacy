@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaDFRPlugin" version="14550"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15400"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15705"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
         <capability name="the Touch Bar" minToolsVersion="8.1" minSystemVersion="10.12.2" requiredIntegratedClassName="NSTouchBar"/>
     </dependencies>
@@ -441,19 +441,22 @@
                                     <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8jN-5C-7h9">
                                         <rect key="frame" x="0.0" y="293" width="777" height="318"/>
                                         <clipView key="contentView" drawsBackground="NO" id="WPF-Rx-ncp">
-                                            <rect key="frame" x="1" y="1" width="775" height="316"/>
+                                            <rect key="frame" x="1" y="1" width="760" height="316"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <textView editable="NO" importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" linkDetection="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="XQc-52-UFs">
-                                                    <rect key="frame" x="0.0" y="0.0" width="775" height="1890"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="760" height="2605"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                    <size key="minSize" width="775" height="316"/>
+                                                    <size key="minSize" width="760" height="316"/>
                                                     <size key="maxSize" width="1271" height="10000000"/>
                                                     <attributedString key="textStorage">
                                                         <fragment>
                                                             <mutableString key="content">What's New:
+3.1.1: 
+-Added a better way to check the network labels. This will result in less network calls and less null variables. 
+
 3.1:
 -Added an on screen delete button for timers.
 -Added the new way to check app info (backend).
@@ -713,7 +716,7 @@ As I am new to OS X development the app layout and functionality will change pro
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
                                         <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="BWP-op-vqF">
-                                            <rect key="frame" x="760" y="1" width="16" height="316"/>
+                                            <rect key="frame" x="761" y="1" width="15" height="316"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
                                     </scrollView>
