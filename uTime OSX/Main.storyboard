@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaDFRPlugin" version="14550"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15705"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaDFRPlugin" version="17008"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17156"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
         <capability name="the Touch Bar" minToolsVersion="8.1" minSystemVersion="10.12.2" requiredIntegratedClassName="NSTouchBar"/>
     </dependencies>
@@ -92,8 +92,8 @@
                                     <customView hidden="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sfH-Ry-no7" customClass="View">
                                         <rect key="frame" x="0.0" y="0.0" width="938" height="600"/>
                                     </customView>
-                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9xp-fm-7AT">
-                                        <rect key="frame" x="-6" y="-7" width="103" height="32"/>
+                                    <button wantsLayer="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9xp-fm-7AT">
+                                        <rect key="frame" x="-7" y="-7" width="98" height="32"/>
                                         <buttonCell key="cell" type="push" title="Add Timer" bezelStyle="rounded" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="flD-xJ-3Ah">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
@@ -102,8 +102,8 @@
                                             <action selector="addTimer:" target="W01-xx-nxc" id="dxE-ga-J2H"/>
                                         </connections>
                                     </button>
-                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ddq-t7-g0i">
-                                        <rect key="frame" x="614" y="-7" width="118" height="32"/>
+                                    <button wantsLayer="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ddq-t7-g0i">
+                                        <rect key="frame" x="621" y="-7" width="112" height="32"/>
                                         <buttonCell key="cell" type="push" title="Delete Timer" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="PrU-iC-xIS">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
@@ -112,8 +112,8 @@
                                             <action selector="deleteTouchBar:" target="W01-xx-nxc" id="7Rg-Vc-VvG"/>
                                         </connections>
                                     </button>
-                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="SB8-BZ-U85">
-                                        <rect key="frame" x="855" y="-7" width="89" height="32"/>
+                                    <button wantsLayer="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="SB8-BZ-U85">
+                                        <rect key="frame" x="861" y="-7" width="84" height="32"/>
                                         <buttonCell key="cell" type="push" title="Support" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="MwI-uE-ija">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
@@ -164,8 +164,8 @@
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
-                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xBJ-t8-RSI">
-                                        <rect key="frame" x="265" y="-7" width="82" height="32"/>
+                                    <button wantsLayer="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xBJ-t8-RSI">
+                                        <rect key="frame" x="268" y="-7" width="76" height="32"/>
                                         <buttonCell key="cell" type="push" title="Modify" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ldz-uG-Gcd">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
@@ -202,12 +202,12 @@
                             </visualEffectView>
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="55" horizontalPageScroll="10" verticalLineScroll="55" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" scrollerKnobStyle="dark" translatesAutoresizingMaskIntoConstraints="NO" id="PSL-57-cIa">
                                 <rect key="frame" x="0.0" y="0.0" width="263" height="600"/>
-                                <clipView key="contentView" drawsBackground="NO" id="yaF-ei-hiO">
-                                    <rect key="frame" x="1" y="0.0" width="261" height="599"/>
+                                <clipView key="contentView" ambiguous="YES" drawsBackground="NO" id="yaF-ei-hiO">
+                                    <rect key="frame" x="1" y="1" width="261" height="598"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" autosaveColumns="NO" rowHeight="53" rowSizeStyle="automatic" headerView="wpH-QH-lf8" viewBased="YES" id="amb-1b-VJW">
-                                            <rect key="frame" x="0.0" y="0.0" width="274" height="574"/>
+                                        <tableView verticalHuggingPriority="750" ambiguous="YES" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" autosaveColumns="NO" rowHeight="53" rowSizeStyle="automatic" headerView="wpH-QH-lf8" viewBased="YES" id="amb-1b-VJW">
+                                            <rect key="frame" x="0.0" y="0.0" width="283" height="573"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -215,7 +215,6 @@
                                             <tableColumns>
                                                 <tableColumn width="271" minWidth="40" maxWidth="1000" id="pGb-5F-pAd">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Timers:">
-                                                        <font key="font" metaFont="menu" size="11"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                                     </tableHeaderCell>
@@ -226,11 +225,11 @@
                                                     </textFieldCell>
                                                     <prototypeCellViews>
                                                         <tableCellView id="ZAf-N1-akR">
-                                                            <rect key="frame" x="1" y="1" width="271" height="53"/>
+                                                            <rect key="frame" x="11" y="1" width="280" height="53"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ez2-hG-P1a">
-                                                                    <rect key="frame" x="0.0" y="-6" width="271" height="59"/>
+                                                                    <rect key="frame" x="0.0" y="-6" width="280" height="59"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="59" id="Sce-pZ-cyJ"/>
                                                                     </constraints>
@@ -265,8 +264,8 @@
                                     <rect key="frame" x="-100" y="-100" width="15" height="102"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
-                                <tableHeaderView key="headerView" id="wpH-QH-lf8">
-                                    <rect key="frame" x="0.0" y="0.0" width="274" height="25"/>
+                                <tableHeaderView key="headerView" wantsLayer="YES" id="wpH-QH-lf8">
+                                    <rect key="frame" x="0.0" y="0.0" width="283" height="25"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableHeaderView>
                             </scrollView>
@@ -361,7 +360,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="777" height="611"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lEq-Z3-F2H">
-                                        <rect key="frame" x="18" y="67" width="741" height="22"/>
+                                        <rect key="frame" x="18" y="67" width="741" height="23"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Current Version" id="EdO-1K-yiX">
                                             <font key="font" metaFont="system" size="19"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -369,7 +368,7 @@
                                         </textFieldCell>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uLw-eD-iiu">
-                                        <rect key="frame" x="18" y="37" width="741" height="22"/>
+                                        <rect key="frame" x="18" y="36" width="741" height="23"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Web New Label" id="dDx-uh-niA">
                                             <font key="font" metaFont="system" size="19"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -377,15 +376,15 @@
                                         </textFieldCell>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0ai-Tw-SsZ">
-                                        <rect key="frame" x="18" y="97" width="741" height="22"/>
+                                        <rect key="frame" x="18" y="98" width="741" height="23"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Web Version:" id="G69-S7-jtx">
                                             <font key="font" metaFont="system" size="19"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
-                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="IC6-j3-3KR">
-                                        <rect key="frame" x="14" y="253" width="380" height="32"/>
+                                    <button wantsLayer="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="IC6-j3-3KR">
+                                        <rect key="frame" x="13" y="254" width="382" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="368" id="DCQ-Oa-ciJ"/>
                                         </constraints>
@@ -397,9 +396,9 @@
                                             <action selector="webSupport:" target="bsA-Ju-hqt" id="D5x-uZ-kfe"/>
                                         </connections>
                                     </button>
-                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4Wu-pb-OIo">
-                                        <rect key="frame" x="14" y="220" width="380" height="32"/>
-                                        <buttonCell key="cell" type="push" title="uTime 4 for macOS Information" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xqJ-nv-l56">
+                                    <button wantsLayer="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4Wu-pb-OIo">
+                                        <rect key="frame" x="13" y="222" width="382" height="32"/>
+                                        <buttonCell key="cell" type="push" title="uTime 5 for macOS Information" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xqJ-nv-l56">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="menu" size="14"/>
                                         </buttonCell>
@@ -407,12 +406,12 @@
                                             <action selector="uTime4Info:" target="bsA-Ju-hqt" id="GXI-9O-6iP"/>
                                         </connections>
                                     </button>
-                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="SvM-TR-U4W">
-                                        <rect key="frame" x="383" y="225" width="380" height="22"/>
+                                    <button wantsLayer="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="SvM-TR-U4W">
+                                        <rect key="frame" x="382" y="227" width="382" height="23"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="11" id="kKh-Pc-1Vf"/>
                                         </constraints>
-                                        <buttonCell key="cell" type="push" title="uTime 4 for macOS Download" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xbX-FT-Pxt">
+                                        <buttonCell key="cell" type="push" title="uTime 5 for macOS Download" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xbX-FT-Pxt">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="menu" size="14"/>
                                         </buttonCell>
@@ -420,8 +419,8 @@
                                             <action selector="uTime4macDownload:" target="bsA-Ju-hqt" id="IsA-dv-i6r"/>
                                         </connections>
                                     </button>
-                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xR8-R0-wAg">
-                                        <rect key="frame" x="14" y="154" width="749" height="32"/>
+                                    <button wantsLayer="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xR8-R0-wAg">
+                                        <rect key="frame" x="13" y="158" width="751" height="32"/>
                                         <buttonCell key="cell" type="push" title="Close" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="NeD-II-hYi">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="menu" size="14"/>
@@ -431,7 +430,7 @@
                                         </connections>
                                     </button>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HN8-am-pXf">
-                                        <rect key="frame" x="325" y="13" width="128" height="16"/>
+                                        <rect key="frame" x="325" y="12" width="128" height="16"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="© uApps 2016-2019" id="2vO-tJ-yH3">
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -441,47 +440,43 @@
                                     <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8jN-5C-7h9">
                                         <rect key="frame" x="0.0" y="293" width="777" height="318"/>
                                         <clipView key="contentView" drawsBackground="NO" id="WPF-Rx-ncp">
-                                            <rect key="frame" x="1" y="1" width="760" height="316"/>
+                                            <rect key="frame" x="1" y="1" width="775" height="316"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <textView editable="NO" importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" linkDetection="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="XQc-52-UFs">
-                                                    <rect key="frame" x="0.0" y="0.0" width="760" height="2605"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="775" height="2284"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                    <size key="minSize" width="760" height="316"/>
+                                                    <size key="minSize" width="775" height="316"/>
                                                     <size key="maxSize" width="1271" height="10000000"/>
                                                     <attributedString key="textStorage">
                                                         <fragment>
-                                                            <mutableString key="content">What's New:
-3.1.1: 
--Added a better way to check the network labels. This will result in less network calls and less null variables. 
-
-3.1:
--Added an on screen delete button for timers.
--Added the new way to check app info (backend).
-
-3.0.8:
-- uTime is becoming a macOS Catalyst app! This means that this app will not be getting updates unless there is a major fix. To read more about this change please hit uTime 4 macOS Information.
--uTime 3 will stick around on the app store for legacy users of the platform. If you are on macOS Catalina and want to download the new uTime please  use the download uTime 4 for macOS Button.
--Thank you
-
-3.0.7:
--Fixed a bunch of iCloud syncing with iOS...
--Fixed a bug where Sorting by date would become disabled after quitting the app.
--Changed the welcome to label
-
-3.0.6:
--Added support for macOS Mojave!
--Added a link to the uTime Privacy Policy (Just know we do not track your data!)
-
-3.0.5:
--Sorting by date has returned to both macOS and iOS versions of uTime!
--Adjusted a timer on the back end so the app should not have issues with selection anymore
-
-3.0.4:
-To coincide with uTime 3 for iOS the sort by date option has been removed and will return in a future update
-
+                                                            <mutableString key="content" base64-UTF8="YES">
+V2hhdCdzIE5ldzoKMy4xLjI6Cldhcm5pbmc6IFRoaXMgdmVyc2lvbiBvZiB1VGltZSBpEHMgdXNpbmcg
+YW4gb2xkIGRhdGEgc2V0IHRoYXQgd2lsbCBub3QgYWxsb3cgaXQgdG8gc3luYyB3aXRoIGlPUy9OZXcg
+TWFjIENvdW50ZXJwYXJ0LiBUbyBjb250aW51ZSB0byBzeW5jIHBsZWFzZSBkb3dubG9hZCB1VGltZSA1
+IGZvciBtYWNPUyAocmVxdWlyZXMgMTAuMTUgb3IgaGlnaGVyKS4KCjMuMS4xOiAKLUFkZGVkIGEgYmV0
+dGVyIHdheSB0byBjaGVjayB0aGUgbmV0d29yayBsYWJlbHMuIFRoaXMgd2lsbCByZXN1bHQgaW4gbGVz
+cyBuZXR3b3JrIGNhbGxzIGFuZCBsZXNzIG51bGwgdmFyaWFibGVzLiAKCjMuMToKLUFkZGVkIGFuIG9u
+IHNjcmVlbiBkZWxldGUgYnV0dG9uIGZvciB0aW1lcnMuCi1BZGRlZCB0aGUgbmV3IHdheSB0byBjaGVj
+ayBhcHAgaW5mbyAoYmFja2VuZCkuCgozLjAuODoKLSB1VGltZSBpcyBiZWNvbWluZyBhIG1hY09TIENh
+dGFseXN0IGFwcCEgVGhpcyBtZWFucyB0aGF0IHRoaXMgYXBwIHdpbGwgbm90IGJlIGdldHRpbmcgdXBk
+YXRlcyB1bmxlc3MgdGhlcmUgaXMgYSBtYWpvciBmaXguIFRvIHJlYWQgbW9yZSBhYm91dCB0aGlzIGNo
+YW5nZSBwbGVhc2UgaGl0IHVUaW1lIDQgbWFjT1MgSW5mb3JtYXRpb24uCi11VGltZSAzIHdpbGwgc3Rp
+Y2sgYXJvdW5kIG9uIHRoZSBhcHAgc3RvcmUgZm9yIGxlZ2FjeSB1c2VycyBvZiB0aGUgcGxhdGZvcm0u
+IElmIHlvdSBhcmUgb24gbWFjT1MgQ2F0YWxpbmEgYW5kIHdhbnQgdG8gZG93bmxvYWQgdGhlIG5ldyB1
+VGltZSBwbGVhc2UgIHVzZSB0aGUgZG93bmxvYWQgdVRpbWUgNCBmb3IgbWFjT1MgQnV0dG9uLgotVGhh
+bmsgeW91CgozLjAuNzoKLUZpeGVkIGEgYnVuY2ggb2YgaUNsb3VkIHN5bmNpbmcgd2l0aCBpT1MuLi4K
+LUZpeGVkIGEgYnVnIHdoZXJlIFNvcnRpbmcgYnkgZGF0ZSB3b3VsZCBiZWNvbWUgZGlzYWJsZWQgYWZ0
+ZXIgcXVpdHRpbmcgdGhlIGFwcC4KLUNoYW5nZWQgdGhlIHdlbGNvbWUgdG8gbGFiZWwKCjMuMC42Ogot
+QWRkZWQgc3VwcG9ydCBmb3IgbWFjT1MgTW9qYXZlIQotQWRkZWQgYSBsaW5rIHRvIHRoZSB1VGltZSBQ
+cml2YWN5IFBvbGljeSAoSnVzdCBrbm93IHdlIGRvIG5vdCB0cmFjayB5b3VyIGRhdGEhKQoKMy4wLjU6
+Ci1Tb3J0aW5nIGJ5IGRhdGUgaGFzIHJldHVybmVkIHRvIGJvdGggbWFjT1MgYW5kIGlPUyB2ZXJzaW9u
+cyBvZiB1VGltZSEKLUFkanVzdGVkIGEgdGltZXIgb24gdGhlIGJhY2sgZW5kIHNvIHRoZSBhcHAgc2hv
+dWxkIG5vdCBoYXZlIGlzc3VlcyB3aXRoIHNlbGVjdGlvbiBhbnltb3JlCgozLjAuNDoKVG8gY29pbmNp
+ZGUgd2l0aCB1VGltZSAzIGZvciBpT1MgdGhlIHNvcnQgYnkgZGF0ZSBvcHRpb24gaGFzIGJlZW4gcmVt
+b3ZlZCBhbmQgd2lsbCByZXR1cm4gaW4gYSBmdXR1cmUgdXBkYXRlCgo
 </mutableString>
                                                             <attributes>
                                                                 <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -716,12 +711,12 @@ As I am new to OS X development the app layout and functionality will change pro
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
                                         <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="BWP-op-vqF">
-                                            <rect key="frame" x="761" y="1" width="15" height="316"/>
+                                            <rect key="frame" x="760" y="1" width="16" height="316"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
                                     </scrollView>
                                     <button translatesAutoresizingMaskIntoConstraints="NO" id="UV0-vZ-vI1">
-                                        <rect key="frame" x="321" y="137" width="135" height="18"/>
+                                        <rect key="frame" x="321" y="140" width="133" height="18"/>
                                         <buttonCell key="cell" type="check" title="Sort By Date" bezelStyle="regularSquare" imagePosition="left" inset="2" id="u4B-sh-gSj">
                                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                             <font key="font" metaFont="system"/>
@@ -730,8 +725,8 @@ As I am new to OS X development the app layout and functionality will change pro
                                             <action selector="sortDate:" target="bsA-Ju-hqt" id="NKL-8z-esD"/>
                                         </connections>
                                     </button>
-                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="leZ-W6-edn">
-                                        <rect key="frame" x="383" y="253" width="380" height="32"/>
+                                    <button wantsLayer="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="leZ-W6-edn">
+                                        <rect key="frame" x="382" y="254" width="382" height="32"/>
                                         <buttonCell key="cell" type="push" title="uTime Privacy" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="mJ9-Bh-Tdu">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="menu" size="14"/>
@@ -740,8 +735,8 @@ As I am new to OS X development the app layout and functionality will change pro
                                             <action selector="privacyView:" target="bsA-Ju-hqt" id="eIQ-xB-xbg"/>
                                         </connections>
                                     </button>
-                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="181-K9-Q9l">
-                                        <rect key="frame" x="14" y="187" width="749" height="32"/>
+                                    <button wantsLayer="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="181-K9-Q9l">
+                                        <rect key="frame" x="13" y="190" width="751" height="32"/>
                                         <buttonCell key="cell" type="push" title="Download uTime for iOS (Free)" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="zNs-ur-KWg">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="menu" size="14"/>
