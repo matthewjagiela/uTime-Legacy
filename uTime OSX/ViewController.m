@@ -75,9 +75,16 @@ NSInteger seconds;
     [[NSUbiquitousKeyValueStore defaultStore]setArray:nameArray forKey:@"nameArray"];
     [[NSUbiquitousKeyValueStore defaultStore]setArray:timeArray forKey:@"timeArray"];
     [[NSUbiquitousKeyValueStore defaultStore]setBool:TRUE forKey:@"firstSetup"];
+    
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSAlert *deprecationAlert = [[NSAlert alloc]init];
+    [deprecationAlert setInformativeText: @"This version of uTime will no longer sync with iOS. To Continue syncing please download uTime 5 on the Mac App Store (Requiring macOS 10.15 or higher."];
+    [deprecationAlert setAlertStyle:NSWarningAlertStyle];
+    [deprecationAlert setMessageText: @"uTime Sync Warning!"];
+    [deprecationAlert runModal];
+
     isFiltered = false;
     self.searchBar.delegate = self;
     filteredTimers = [[NSMutableArray alloc]init];
